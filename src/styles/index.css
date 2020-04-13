@@ -1,0 +1,50 @@
+/* Basic setup */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+/* Header and text*/
+
+header{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    justify-self: flex-start;
+    font-size: 3.8rem;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    margin-bottom: .6rem;
+}
+
+p {
+    font-size: 2.6rem;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 1200px) {
+    html {
+        font-size: 46.875%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    html {
+        font-size: 31.25%;
+    }
+}
